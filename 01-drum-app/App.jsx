@@ -16,14 +16,16 @@ const App = () => {
   return (
     <>
       <h1>Soundboard</h1>
-      <Button keyK={'KeyA'} text={'chime'} audio={chime1}/>
-      <Button keyK={'KeyS'}  text={'coin1'} audio={coin1}/>
-      <Button keyK={'KeyD'}  text={'coin2'} audio={coin2}/>
-      <Button keyK={'KeyF'}  text={'coin3'} audio={coin3}/>
-      <Button keyK={'KeyG'}  text={'ding1'} audio={ding1}/>
-      <Button keyK={'KeyH'}  text={'ding2'} audio={ding2}/>
-      <Button keyK={'KeyJ'}  text={'ding3'} audio={ding3}/>
-      <Button keyK={'KeyK'}  text={'ding4'} audio={ding4}/>
+      <div className="buttons">
+        <Button keyK={'KeyA'} text={'chime'} audio={chime1}/>
+        <Button keyK={'KeyS'}  text={'coin1'} audio={coin1}/>
+        <Button keyK={'KeyD'}  text={'coin2'} audio={coin2}/>
+        <Button keyK={'KeyF'}  text={'coin3'} audio={coin3}/>
+        <Button keyK={'KeyG'}  text={'ding1'} audio={ding1}/>
+        <Button keyK={'KeyH'}  text={'ding2'} audio={ding2}/>
+        <Button keyK={'KeyJ'}  text={'ding3'} audio={ding3}/>
+        <Button keyK={'KeyK'}  text={'ding4'} audio={ding4}/>
+      </div>
     </>
   )
 }
