@@ -15,15 +15,15 @@ import Button from './components/Button/Button.jsx';
 const App = () => {
   return (
     <>
-    <h1>Soundboard</h1>
-      <Button text={'chime'} audio={chime1}/>
-      <Button text={'coin1'} audio={coin1}/>
-      <Button text={'coin2'} audio={coin2}/>
-      <Button text={'coin3'} audio={coin3}/>
-      <Button text={'ding1'} audio={ding1}/>
-      <Button text={'ding2'} audio={ding2}/>
-      <Button text={'ding3'} audio={ding3}/>
-      <Button text={'ding4'} audio={ding4}/>
+      <h1>Soundboard</h1>
+      <Button keyK={'KeyA'} text={'chime'} audio={chime1}/>
+      <Button keyK={'KeyS'}  text={'coin1'} audio={coin1}/>
+      <Button keyK={'KeyD'}  text={'coin2'} audio={coin2}/>
+      <Button keyK={'KeyF'}  text={'coin3'} audio={coin3}/>
+      <Button keyK={'KeyG'}  text={'ding1'} audio={ding1}/>
+      <Button keyK={'KeyH'}  text={'ding2'} audio={ding2}/>
+      <Button keyK={'KeyJ'}  text={'ding3'} audio={ding3}/>
+      <Button keyK={'KeyK'}  text={'ding4'} audio={ding4}/>
     </>
   )
 }

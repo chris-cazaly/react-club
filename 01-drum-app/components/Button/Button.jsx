@@ -1,14 +1,19 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Button = ({text, audio}) => {
+const Button = ({text, audio, keyK}) => {
+
+  window.addEventListener('keydown', (e) => {
+    if (keyK == e.code) {
+      playSound();
+    }
+  })
   
   const playSound = () => {
     new Audio(audio).play();
   }
 
-  console.log(typeof(audio))
-    
+
   return (
     <>
       <button onClick={playSound}>{text}</button>
@@ -16,9 +21,10 @@ const Button = ({text, audio}) => {
   )
 }
 
+
 Button.propTypes = {
-  // audioSrc: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired
+  text: PropTypes.string.isRequired,
+  key: PropTypes.string
 }
 
 
